@@ -1,3 +1,7 @@
+# Site content lives in netlify-export/ (repo root has no index.html).
+[build]
+  publish = "netlify-export"
+
 # Content-hashed asset filenames -> safe to cache forever.
 [[headers]]
   for = "/assets/*"
