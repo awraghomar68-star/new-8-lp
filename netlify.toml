@@ -2,6 +2,13 @@
 [build]
   publish = "netlify-export"
 
+# The Terroir & Histoire page is now the site home page (netlify-export/index.html).
+# Keep its former URL working for anything already linking to it.
+[[redirects]]
+  from = "/terroir-histoire/*"
+  to = "/"
+  status = 301
+
 # Content-hashed asset filenames -> safe to cache forever.
 [[headers]]
   for = "/assets/*"
