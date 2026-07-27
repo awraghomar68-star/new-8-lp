@@ -319,17 +319,41 @@ a{color:#8C3B24;} a:hover{color:#6B2A16;}
       <input type="hidden" name="form-name" value="commande">
       <div style="text-align:center;font-family:'Amiri',serif;font-size:22px;font-weight:700;color:#E0A93E">اطلب الآن — ونتصل بك للتأكيد</div>
       <div style="text-align:center;font-size:12.5px;opacity:.75;margin-top:-6px">املأ معلوماتك ونتصل بك لتأكيد الطلب — الدفع عند الاستلام.</div>
+      <fieldset style="border:none;margin:0;padding:0;display:grid;gap:8px">
+        <legend style="padding:0;font-size:13px;font-weight:600;margin-bottom:3px">اختر الحجم</legend>
+        <label style="display:flex;align-items:center;gap:11px;background:#2E2418;border:1.5px solid #5C4A2C;border-radius:8px;padding:13px 14px;cursor:pointer">
+          <input type="radio" name="size" value="5 غرام — 200 درهم" required="required" style="accent-color:#E0A93E;width:18px;height:18px;flex:none;margin:0">
+          <span style="flex:1;font-size:15px;font-weight:700">5 غرام</span><strong style="font-size:15.5px;color:#E0A93E">200 درهم</strong>
+        </label>
+        <label style="display:flex;align-items:center;gap:11px;background:#2E2418;border:1.5px solid #E0A93E;border-radius:8px;padding:13px 14px;cursor:pointer">
+          <input type="radio" name="size" value="10 غرامات — 400 درهم" style="accent-color:#E0A93E;width:18px;height:18px;flex:none;margin:0">
+          <span style="flex:1;font-size:15px;font-weight:700">10 غرامات <span style="font-size:11.5px;font-weight:700;color:#E0A93E">· الأكثر طلباً</span></span><strong style="font-size:15.5px;color:#E0A93E">400 درهم</strong>
+        </label>
+        <label style="display:flex;align-items:center;gap:11px;background:#2E2418;border:1.5px solid #5C4A2C;border-radius:8px;padding:13px 14px;cursor:pointer">
+          <input type="radio" name="size" value="15 غراماً — 600 درهم" style="accent-color:#E0A93E;width:18px;height:18px;flex:none;margin:0">
+          <span style="flex:1;font-size:15px;font-weight:700">15 غراماً</span><strong style="font-size:15.5px;color:#E0A93E">600 درهم</strong>
+        </label>
+        <label style="display:flex;align-items:center;gap:11px;background:#2E2418;border:1.5px solid #5C4A2C;border-radius:8px;padding:13px 14px;cursor:pointer">
+          <input type="radio" name="size" value="20 غراماً — 800 درهم" style="accent-color:#E0A93E;width:18px;height:18px;flex:none;margin:0">
+          <span style="flex:1;font-size:15px;font-weight:700">20 غراماً</span><strong style="font-size:15.5px;color:#E0A93E">800 درهم</strong>
+        </label>
+        <label style="display:flex;align-items:center;gap:11px;background:#2E2418;border:1.5px solid #5C4A2C;border-radius:8px;padding:13px 14px;cursor:pointer">
+          <input type="radio" name="size" value="50 غراماً — 2000 درهم" style="accent-color:#E0A93E;width:18px;height:18px;flex:none;margin:0">
+          <span style="flex:1;font-size:15px;font-weight:700">50 غراماً</span><strong style="font-size:15.5px;color:#E0A93E">2000 درهم</strong>
+        </label>
+        <div style="font-size:12px;opacity:.7;text-align:center">التوصيل مجاني للطلبات من 200 درهم · الدفع عند الاستلام</div>
+      </fieldset>
       <label style="display:grid;gap:5px;font-size:13px;font-weight:600">الاسم الكامل
-        <input type="text" name="name" required="" placeholder="مثال: فاطمة أيت باها" style="width:100%;box-sizing:border-box;background:#2E2418;border:1.5px solid #5C4A2C;border-radius:8px;padding:12px 14px;color:#EFE2C4;font-size:15px;font-family:inherit">
+        <input type="text" name="name" required="required" placeholder="مثال: فاطمة أيت باها" style="width:100%;box-sizing:border-box;background:#2E2418;border:1.5px solid #5C4A2C;border-radius:8px;padding:12px 14px;color:#EFE2C4;font-size:15px;font-family:inherit">
       </label>
       <label style="display:grid;gap:5px;font-size:13px;font-weight:600">رقم الهاتف
-        <input type="tel" name="phone" required="" placeholder="06XXXXXXXX" dir="ltr" style="width:100%;box-sizing:border-box;background:#2E2418;border:1.5px solid #5C4A2C;border-radius:8px;padding:12px 14px;color:#EFE2C4;font-size:15px;font-family:inherit;text-align:right">
+        <input type="tel" name="phone" required="required" placeholder="06XXXXXXXX" dir="ltr" style="width:100%;box-sizing:border-box;background:#2E2418;border:1.5px solid #5C4A2C;border-radius:8px;padding:12px 14px;color:#EFE2C4;font-size:15px;font-family:inherit;text-align:right">
       </label>
       <label style="display:grid;gap:5px;font-size:13px;font-weight:600">المدينة
-        <input type="text" name="city" required="" placeholder="مثال: الدار البيضاء" style="width:100%;box-sizing:border-box;background:#2E2418;border:1.5px solid #5C4A2C;border-radius:8px;padding:12px 14px;color:#EFE2C4;font-size:15px;font-family:inherit">
+        <input type="text" name="city" required="required" placeholder="مثال: الدار البيضاء" style="width:100%;box-sizing:border-box;background:#2E2418;border:1.5px solid #5C4A2C;border-radius:8px;padding:12px 14px;color:#EFE2C4;font-size:15px;font-family:inherit">
       </label>
       <label style="display:grid;gap:5px;font-size:13px;font-weight:600">العنوان
-        <textarea name="address" required="" rows="2" placeholder="الحي، الشارع، رقم الدار…" style="width:100%;box-sizing:border-box;background:#2E2418;border:1.5px solid #5C4A2C;border-radius:8px;padding:12px 14px;color:#EFE2C4;font-size:15px;font-family:inherit;resize:vertical"></textarea>
+        <textarea name="address" required="required" rows="2" placeholder="الحي، الشارع، رقم الدار…" style="width:100%;box-sizing:border-box;background:#2E2418;border:1.5px solid #5C4A2C;border-radius:8px;padding:12px 14px;color:#EFE2C4;font-size:15px;font-family:inherit;resize:vertical"></textarea>
       </label>
       <button type="submit" style="background:#E0A93E;color:#2E2418;border:none;border-radius:10px;padding:15px 16px;font-size:16px;font-weight:800;font-family:inherit;cursor:pointer">أرسل الطلب — نتصل بك للتأكيد</button>
     </form>
